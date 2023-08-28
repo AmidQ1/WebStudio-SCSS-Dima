@@ -1,0 +1,175 @@
+.header-site{
+    width: 100vw;
+    height: 80px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+/*nav*/
+
+.header-box{
+    width: 325px;
+    height: 48px;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    margin-top: 52px;
+    margin-bottom: 50px;
+    margin-right: 313px;
+}
+
+.header-box-text-line{
+    list-style: none;
+
+    height: 48px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+.header-text{
+    color: #212121;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    transition: 0.5s;
+}
+
+.header-text-one{
+    width: 48px;
+    height: 48px;
+}
+
+.header-text-two{
+    width: 72px;
+    height: 48px;
+}
+
+.header-text-three{
+    width: 64px;
+    height: 48px;
+}
+
+.header-text{
+    position: relative;
+}
+
+.header-text::after{
+    content: "";
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 0;
+    height: 4px;
+
+    border-radius: 2px;
+
+    background-color: #2196F3;
+
+    opacity: 0;
+    transition: opacity 0.3s ease, width 0.3s ease;
+}
+
+.header-text:hover{   
+    color: #2196F3;
+}
+
+.header-text:hover::after {
+    opacity: 1;
+
+    width: 100%;
+}
+
+/*tel, email*/
+.header-tel-email{
+    display: flex;
+}
+
+.header-one, .header-two{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+
+    margin-right: 30px;
+}
+
+.header-one{
+    width: 161px;
+}
+
+.header-two{
+    width: 142px;
+}
+
+.header-p-svg-mail{
+    width: 135px;
+    height: 16px;
+
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin: 0;
+    
+    transition:color 1s;
+}
+
+.header-p-svg-call{
+    width: 122px;
+    height: 16px;
+
+    color: #757575;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin: 0; 
+
+    transition:color 1s;
+}
+
+.hvs{
+    transition:fill 1s;
+}
+
+
+.header-one:hover .hvs{
+    fill: #2196F3;
+}
+
+.header-one:hover .header-p-svg-mail{
+    color: #2196F3;
+}
+
+.header-two:hover .hvs{
+    fill: #2196F3;
+}
+
+.header-two:hover .header-p-svg-call{
+    color: #2196F3;
+}
