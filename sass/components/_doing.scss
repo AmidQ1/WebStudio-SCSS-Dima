@@ -1,0 +1,66 @@
+/*are we doing*/
+.doing-site{
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.doing-title{
+    color: #212121;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+
+    margin-bottom: 50px;
+}
+
+.big-box{
+    width: 1170px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.photo-task{
+    width: 370px;
+    height: 294px;
+}
+
+.box-text{
+    width: 370px;
+    height: 70px;
+
+    background: rgba(47, 48, 58, 0.80);
+    flex-shrink: 0;
+
+    position: absolute;
+
+    bottom: 5px;   
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text-status{
+    color: #FFF;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    letter-spacing: 0.42px;
+    text-transform: uppercase;    
+}
