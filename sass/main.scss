@@ -1,3 +1,7 @@
+/*SASS utils*/
+
+@import "utils/variables";
+
 /*main comp*/
 
 body{
@@ -12,3 +16,15 @@ body{
 }
 
 /*SASS comp*/
+
+@import "components/logo";
+
+@import "components/header";
+
+@import "components/banner";
+@import "components/form";
+@import "components/doing";
+@import "components/team";
+@import "components/client";
+
+@import "components/footer";

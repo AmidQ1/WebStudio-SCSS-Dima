@@ -1,0 +1,136 @@
+/*FOOTER*/
+
+.footer{
+    width: 100vw;
+    height: 255px;
+
+    background: $bgfooter_color;
+
+    margin-top: 30px;
+
+    display: flex;
+
+    flex-direction: row;
+
+        &__info{
+            margin-left: 215px;
+            margin-top: 60px;
+        }
+
+        &__city{
+            color: $white_color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px; 
+            letter-spacing: 0.42px;
+        }
+
+        &__email{
+            color: $footer_color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+        }
+
+        &__tel{
+            color: $footer_color;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.42px;
+        }
+
+            &__joing{
+                margin-top: 60px;
+                margin-left: 70px;
+            }
+
+            &__name{
+                color: $white_color;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 0.42px;
+                text-transform: uppercase;
+            }
+
+            &__text{
+                width: 358px;
+                height: 50px;
+
+                border-radius: 4px;
+                border: 1px solid rgba(255, 255, 255, 0.30);
+                background: rgba(33, 150, 243, 0.00);
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+                margin-right: 12px;
+
+                padding-left: 16px;
+
+                color: $footer_color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.48px;
+            }
+
+            &__text:focus{
+                color: $accent_color;
+            }
+
+            &__text::placeholder{
+                width: 47px;
+                height: 20px;
+
+                color: $footer_color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.48px;
+            }
+
+            &__button-after{
+                width: 200px;
+                height: 50px;
+
+                border-radius: 4px;
+                background: $accent_color;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+                color: $white_color;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+                letter-spacing: 0.96px;
+            }
+
+            &__telegram{
+                margin-top: 60px;
+                margin-left: 109px;
+            }
+
+            &__button-after::after{
+                display: inline-block;
+                content: "";
+                background: url(../img/icon_send.svg);
+                width: 24px;
+                height: 24px;
+                background-size: contain;
+                margin-left: 13px;
+                transform: translateY(20%);
+            }
+}
+
+.social-team-black{
+    margin-top: 30px;
+    margin-left: 0;
+}
