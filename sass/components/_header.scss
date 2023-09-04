@@ -1,4 +1,4 @@
-.header-site{
+.header{
     width: 100vw;
     height: 80px;
 
@@ -8,170 +8,167 @@
     align-items: center;
 
     margin-bottom: 10px;
-}
 
-/*nav*/
+    /*nav*/
 
-.header-box{
-    width: 325px;
-    height: 48px;
+    &__big{
+        width: 325px;
+        height: 48px;
 
-    display: flex;
+        display: flex;
 
-    flex-direction: row;
+        flex-direction: row;
 
-    justify-content: space-between;
+        justify-content: space-between;
 
-    margin-top: 52px;
-    margin-bottom: 50px;
-    margin-right: 313px;
-}
+        margin-top: 52px;
+        margin-bottom: 50px;
+        margin-right: 313px;
+    }
 
-.header-box-text-line{
-    list-style: none;
+    &__box{
+        list-style: none;
+    
+        height: 48px;
+    
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+    
+        flex-direction: column;
+    }
 
-    height: 48px;
+    &__text{
+        position: relative;
 
-    display: flex;
+        color: #212121;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    
+        transition: 0.5s;
 
-    justify-content: center;
-    align-items: center;
+        &:hover{   
+            color: $accent_color;
+        }
 
-    flex-direction: column;
-}
+            &-one{
+                width: 48px;
+                height: 48px;
+            }
+            
+            &-two{
+                width: 72px;
+                height: 48px;
+            }
+            
+            &-three{
+                width: 64px;
+                height: 48px;
+            }
 
-.header-text{
-    color: #212121;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+        &::after{
+            content: "";
+        
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        
+            width: 0;
+            height: 4px;
+        
+            border-radius: 2px;
+        
+            background-color: $accent_color;
+        
+            opacity: 0;
+            transition: opacity 0.3s ease, width 0.3s ease;
+            }
 
-    transition: 0.5s;
-}
+            &:hover::after {
+                opacity: 1;
+    
+                width: 100%;
+            }
+        }
 
-.header-text-one{
-    width: 48px;
-    height: 48px;
-}
+    /*tel, email*/
+    &__big1{
+        display: flex;
+    }
 
-.header-text-two{
-    width: 72px;
-    height: 48px;
-}
+    &__email, &__tel{
+        display: flex;
+    
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    
+        margin-right: 30px;
+    }
 
-.header-text-three{
-    width: 64px;
-    height: 48px;
-}
+    &__email{
+        width: 161px;
 
-.header-text{
-    position: relative;
-}
+        &:hover .hvs{
+            fill: $accent_color;
+        }
 
-.header-text::after{
-    content: "";
+        &:hover &-hover{
+            color: $accent_color;
+        }
+    }
+    
+    &__tel{
+        width: 142px;
 
-    position: absolute;
-    bottom: -5px;
-    left: 0;
+        &:hover .hvs{
+            fill: $accent_color;
+        }
 
-    width: 0;
-    height: 4px;
+        &:hover &-hover{
+            color: $accent_color;
+        }
+    }
 
-    border-radius: 2px;
-
-    background-color: $accent_color;
-
-    opacity: 0;
-    transition: opacity 0.3s ease, width 0.3s ease;
-}
-
-.header-text:hover{   
-    color: $accent_color;
-}
-
-.header-text:hover::after {
-    opacity: 1;
-
-    width: 100%;
-}
-
-/*tel, email*/
-.header-tel-email{
-    display: flex;
-}
-
-.header-one, .header-two{
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-
-    margin-right: 30px;
-}
-
-.header-one{
-    width: 161px;
-}
-
-.header-two{
-    width: 142px;
-}
-
-.header-p-svg-mail{
-    width: 135px;
-    height: 16px;
-
-    color: $gray_color;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-
-    margin: 0;
-
-    transition:color 1s;
-}
-
-.header-p-svg-call{
-    width: 122px;
-    height: 16px;
-
-    color: $gray_color;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
-
-    margin: 0; 
-
-    transition:color 1s;
+    &__email-hover{
+        width: 135px;
+        height: 16px;
+    
+        color: $gray_color;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    
+        margin: 0;
+    
+        transition:color 1s;
+    }
+    
+    &__tel-hover{
+        width: 122px;
+        height: 16px;
+    
+        color: $gray_color;
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.28px;
+    
+        margin: 0; 
+    
+        transition:color 1s;
+    }
 }
 
 .hvs{
     transition:fill 1s;
-}
-
-
-.header-one:hover .hvs{
-    fill: $accent_color;
-}
-
-.header-one:hover .header-p-svg-mail{
-    color: $accent_color;
-}
-
-.header-two:hover .hvs{
-    fill: $accent_color;
-}
-
-.header-two:hover .header-p-svg-call{
-    color: $accent_color;
 }

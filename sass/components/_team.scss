@@ -1,5 +1,5 @@
 /*TEAM*/
-.team-site{
+.team{
     width: 100vw;
     height: 708px;
 
@@ -12,80 +12,80 @@
     flex-direction: column;
 
     margin-top: 94px;
+
+    &__title{
+        color: $main_title_color;
+        text-align: center;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.08px;
+    
+        margin-top: 91px;
+    }
+
+    &__big{
+        width: 1170px;
+        height: 428px;
+    
+        display: flex;
+    
+        justify-content: space-between;
+        align-items: center;
+    
+        margin-top: 50px;
+    }
+
+    &__box{
+        width: 270px;
+        height: 428px;
+    
+        border-radius: 0px 0px 4px 4px;
+        background: $white_color;
+    
+        box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__img{
+        width: 270px;
+        height: 260px;
+    }
+
+    &__name{
+        color: $main_title_color;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__subtitle{
+        color: $gray_color;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+    
+        display: flex;
+    
+        justify-content: center;
+        align-items: center;
+    }
 }
 
-.team-title{
-    color: $main_title_color;
-    text-align: center;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 1.08px;
-
-    margin-top: 91px;
-}
-
-.box-team{
-    width: 1170px;
-    height: 428px;
-
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-
-    margin-top: 50px;
-}
-
-.team{
-    width: 270px;
-    height: 428px;
-
-    border-radius: 0px 0px 4px 4px;
-    background: $white_color;
-
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-}
-
-.img-team{
-    width: 270px;
-    height: 260px;
-}
-
-.title-team{
-    color: $main_title_color;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.subtitle-team{
-    color: $gray_color;
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.48px;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.social-team{
+.social{
     width: 190px;
 
     margin-left: 52px;
@@ -94,48 +94,23 @@
 
     justify-content: space-between;
     align-items: center;
-}
 
-.circle-team-one, .circle-team-two, .circle-team-three, .circle-team-four{
-    transition: fill 1s;
-}
+    &__black{
+        margin-top: 30px;
+        margin-left: 0;
+    }
 
-.social-team-all-one:hover .circle-team-one{
-    transition: fill 1s;
-    fill: $accent_color;
-}
+    &__team{
+        transition: fill 1s;
 
-.social-team-all-one:hover .social-team-one{
-    transition: fill 1s;
-    fill: $white_color;
-}
+        &:hover .circle__team-button{
+            transition: fill 1s;
+            fill: $accent_color;
+        }
 
-.social-team-all-two:hover .circle-team-two{
-    transition: fill 1s;
-    fill: $accent_color;
-}
-
-.social-team-all-two:hover .social-team-two{
-    transition: fill 1s;
-    fill: $white_color;
-}
-
-.social-team-all-three:hover .circle-team-three{
-    transition: fill 1s;
-    fill: $accent_color;
-}
-
-.social-team-all-three:hover .social-team-three{
-    transition: fill 1s;
-    fill: $white_color;
-}
-
-.social-team-all-four:hover .circle-team-four{
-    transition: fill 1s;
-    fill: $accent_color;
-}
-
-.social-team-all-four:hover .social-team-four{
-    transition: fill 1s;
-    fill: $white_color;
+        &:hover &-button{
+            transition: fill 1s;
+            fill: $white_color;
+        }
+    }
 }

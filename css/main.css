@@ -22,17 +22,17 @@ footer .log-web {
   margin-bottom: 20px;
 }
 
-.header-site {
+.header {
   width: 100vw;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  /*nav*/
+  /*tel, email*/
 }
-
-/*nav*/
-.header-box {
+.header__big {
   width: 325px;
   height: 48px;
   display: flex;
@@ -42,8 +42,7 @@ footer .log-web {
   margin-bottom: 50px;
   margin-right: 313px;
 }
-
-.header-box-text-line {
+.header__box {
   list-style: none;
   height: 48px;
   display: flex;
@@ -51,8 +50,8 @@ footer .log-web {
   align-items: center;
   flex-direction: column;
 }
-
-.header-text {
+.header__text {
+  position: relative;
   color: #212121;
   font-size: 14px;
   font-style: normal;
@@ -61,27 +60,22 @@ footer .log-web {
   letter-spacing: 0.28px;
   transition: 0.5s;
 }
-
-.header-text-one {
+.header__text:hover {
+  color: #2196F3;
+}
+.header__text-one {
   width: 48px;
   height: 48px;
 }
-
-.header-text-two {
+.header__text-two {
   width: 72px;
   height: 48px;
 }
-
-.header-text-three {
+.header__text-three {
   width: 64px;
   height: 48px;
 }
-
-.header-text {
-  position: relative;
-}
-
-.header-text::after {
+.header__text::after {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -93,38 +87,39 @@ footer .log-web {
   opacity: 0;
   transition: opacity 0.3s ease, width 0.3s ease;
 }
-
-.header-text:hover {
-  color: #2196F3;
-}
-
-.header-text:hover::after {
+.header__text:hover::after {
   opacity: 1;
   width: 100%;
 }
-
-/*tel, email*/
-.header-tel-email {
+.header__big1 {
   display: flex;
 }
-
-.header-one, .header-two {
+.header__email, .header__tel {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-right: 30px;
 }
-
-.header-one {
+.header__email {
   width: 161px;
 }
-
-.header-two {
+.header__email:hover .hvs {
+  fill: #2196F3;
+}
+.header__email:hover .header__email-hover {
+  color: #2196F3;
+}
+.header__tel {
   width: 142px;
 }
-
-.header-p-svg-mail {
+.header__tel:hover .hvs {
+  fill: #2196F3;
+}
+.header__tel:hover .header__tel-hover {
+  color: #2196F3;
+}
+.header__email-hover {
   width: 135px;
   height: 16px;
   color: #757575;
@@ -137,8 +132,7 @@ footer .log-web {
   margin: 0;
   transition: color 1s;
 }
-
-.header-p-svg-call {
+.header__tel-hover {
   width: 122px;
   height: 16px;
   color: #757575;
@@ -154,22 +148,6 @@ footer .log-web {
 
 .hvs {
   transition: fill 1s;
-}
-
-.header-one:hover .hvs {
-  fill: #2196F3;
-}
-
-.header-one:hover .header-p-svg-mail {
-  color: #2196F3;
-}
-
-.header-two:hover .hvs {
-  fill: #2196F3;
-}
-
-.header-two:hover .header-p-svg-call {
-  color: #2196F3;
 }
 
 /*Banner*/
@@ -199,7 +177,7 @@ footer .log-web {
   justify-content: center;
   align-items: center;
 }
-.banner__button {
+.banner__button-open {
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -215,7 +193,7 @@ footer .log-web {
 }
 
 /*form*/
-.form-site {
+.form {
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0;
@@ -230,32 +208,21 @@ footer .log-web {
   transition: opacity 250ms ease-in;
   z-index: 3;
 }
-
-.form-site.is-hidden {
-  pointer-events: none;
-  opacity: 0;
-  visibility: visible;
-  transform: translateY(-100%);
-  transition: opacity 250ms ease-in, transform 250ms ease-in;
-}
-
-.form {
+.form__object {
   width: 528px;
   height: 581px;
   border-radius: 4px;
   background: #FFFFFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
-.box-button {
+.form__button {
   position: relative;
   top: 8px;
   right: 8px;
   display: flex;
   justify-content: end;
 }
-
-.button-img-close {
+.form__button-close {
   width: 30px;
   height: 30px;
   fill: #FFFFFF;
@@ -264,8 +231,10 @@ footer .log-web {
   border-radius: 50%;
   font-size: 24px;
 }
-
-.form-title {
+.form__button-close:hover {
+  color: #2196F3;
+}
+.form__title {
   color: #212121;
   text-align: center;
   font-size: 20px;
@@ -275,8 +244,7 @@ footer .log-web {
   letter-spacing: 0.6px;
   margin-bottom: 0;
 }
-
-.big-box-form {
+.form__big {
   width: 448px;
   height: 342px;
   display: flex;
@@ -285,8 +253,7 @@ footer .log-web {
   margin-top: 12px;
   margin-bottom: 20px;
 }
-
-.box-form {
+.form__box {
   width: 448px;
   height: 58px;
   display: flex;
@@ -295,8 +262,11 @@ footer .log-web {
   margin-bottom: 10px;
   position: relative;
 }
-
-.form-box-title {
+.form__box:hover .form__text, .form__box:hover .form__svg-hover {
+  color: #2196F3;
+  fill: #2196F3;
+}
+.form__name {
   color: #757575;
   font-size: 12px;
   font-style: normal;
@@ -305,50 +275,35 @@ footer .log-web {
   letter-spacing: 0.12px;
   margin-bottom: 5px;
 }
-
-.form-svg {
-  position: absolute;
-  top: 30px;
-  left: 12px;
-}
-
-.input-text {
+.form__text {
   width: 428px;
   height: 40px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 35px;
 }
-
-.messega {
-  border-radius: 4px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  padding-top: 12px;
-  padding-left: 16px;
+.form__text:focus {
+  color: #2196F3;
 }
-
-.box-form-m {
-  width: 428px;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  margin-left: 40px;
-  position: relative;
+.form__text:focus ~ .form__svg path {
+  fill: #2196F3;
 }
-
-.box-check {
+.form__svg {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+}
+.form__check {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.form-checkbox {
+.form__check-checkbox {
   width: 16px;
   height: 15px;
   margin-right: 8px;
 }
-
-.form-conditions {
+.form__check-conditions {
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -357,8 +312,7 @@ footer .log-web {
   letter-spacing: 0.42px;
   margin-right: 8px;
 }
-
-.form-a {
+.form__check-a {
   color: #2196F3;
   font-size: 14px;
   font-style: normal;
@@ -368,14 +322,43 @@ footer .log-web {
   text-decoration-line: underline;
 }
 
-.box-button-send {
+.form1 {
+  width: 428px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  position: relative;
+}
+.form1__messega {
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-top: 12px;
+  padding-left: 16px;
+}
+.form1__messega:hover {
+  color: #2196F3;
+  fill: #2196F3;
+}
+.form1__messega:focus {
+  color: #2196F3;
+}
+
+.form.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: visible;
+  transform: translateY(-100%);
+  transition: opacity 250ms ease-in, transform 250ms ease-in;
+}
+
+.form__box1 {
   margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.button-send {
+.form__box1-send {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -388,28 +371,6 @@ footer .log-web {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-}
-
-/*hover, focus, form*/
-.button-img-close:hover {
-  color: #2196F3;
-}
-
-.box-form:hover .input-text, .box-form:hover .form-svg-hover, .messega:hover {
-  color: #2196F3;
-  fill: #2196F3;
-}
-
-.input-text:focus {
-  color: #2196F3;
-}
-
-.messega:focus {
-  color: #2196F3;
-}
-
-.input-text:focus ~ .form-svg path {
-  fill: #2196F3;
 }
 
 /*are we doing*/
@@ -463,7 +424,7 @@ footer .log-web {
 }
 
 /*TEAM*/
-.team-site {
+.team {
   width: 100vw;
   height: 708px;
   background: #F5F4FA;
@@ -472,8 +433,7 @@ footer .log-web {
   flex-direction: column;
   margin-top: 94px;
 }
-
-.team-title {
+.team__title {
   color: #212121;
   text-align: center;
   font-size: 36px;
@@ -483,8 +443,7 @@ footer .log-web {
   letter-spacing: 1.08px;
   margin-top: 91px;
 }
-
-.box-team {
+.team__big {
   width: 1170px;
   height: 428px;
   display: flex;
@@ -492,21 +451,18 @@ footer .log-web {
   align-items: center;
   margin-top: 50px;
 }
-
-.team {
+.team__box {
   width: 270px;
   height: 428px;
   border-radius: 0px 0px 4px 4px;
   background: #FFFFFF;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
-
-.img-team {
+.team__img {
   width: 270px;
   height: 260px;
 }
-
-.title-team {
+.team__name {
   color: #212121;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -519,8 +475,7 @@ footer .log-web {
   justify-content: center;
   align-items: center;
 }
-
-.subtitle-team {
+.team__subtitle {
   color: #757575;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -534,54 +489,25 @@ footer .log-web {
   align-items: center;
 }
 
-.social-team {
+.social {
   width: 190px;
   margin-left: 52px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.circle-team-one, .circle-team-two, .circle-team-three, .circle-team-four {
+.social__black {
+  margin-top: 30px;
+  margin-left: 0;
+}
+.social__team {
   transition: fill 1s;
 }
-
-.social-team-all-one:hover .circle-team-one {
-  transition: fill 1s;
-  fill: #2196F3;
-}
-
-.social-team-all-one:hover .social-team-one {
-  transition: fill 1s;
-  fill: #FFFFFF;
-}
-
-.social-team-all-two:hover .circle-team-two {
+.social__team:hover .circle__team-button {
   transition: fill 1s;
   fill: #2196F3;
 }
-
-.social-team-all-two:hover .social-team-two {
-  transition: fill 1s;
-  fill: #FFFFFF;
-}
-
-.social-team-all-three:hover .circle-team-three {
-  transition: fill 1s;
-  fill: #2196F3;
-}
-
-.social-team-all-three:hover .social-team-three {
-  transition: fill 1s;
-  fill: #FFFFFF;
-}
-
-.social-team-all-four:hover .circle-team-four {
-  transition: fill 1s;
-  fill: #2196F3;
-}
-
-.social-team-all-four:hover .social-team-four {
+.social__team:hover .social__team-button {
   transition: fill 1s;
   fill: #FFFFFF;
 }
@@ -740,9 +666,4 @@ footer .log-web {
   background-size: contain;
   margin-left: 13px;
   transform: translateY(20%);
-}
-
-.social-team-black {
-  margin-top: 30px;
-  margin-left: 0;
 }
