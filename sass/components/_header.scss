@@ -11,7 +11,7 @@
 
     /*nav*/
 
-    &__big{
+    &-nav__item{
         width: 325px;
         height: 48px;
 
@@ -96,11 +96,10 @@
         }
 
     /*tel, email*/
-    &__big1{
+    &-item{
         display: flex;
-    }
-
-    &__email, &__tel{
+        
+        &__email, &__tel{
         display: flex;
     
         justify-content: space-between;
@@ -117,7 +116,7 @@
             fill: $accent_color;
         }
 
-        &:hover &-hover{
+        &:hover &--hover{
             color: $accent_color;
         }
     }
@@ -129,12 +128,12 @@
             fill: $accent_color;
         }
 
-        &:hover &-hover{
+        &:hover &--hover{
             color: $accent_color;
         }
     }
 
-    &__email-hover{
+    &__email--hover{
         width: 135px;
         height: 16px;
     
@@ -151,7 +150,7 @@
         transition:color 1s;
     }
     
-    &__tel-hover{
+    &__tel--hover{
         width: 122px;
         height: 16px;
     
@@ -166,6 +165,7 @@
         margin: 0; 
     
         transition:color 1s;
+    }
     }
 }
 

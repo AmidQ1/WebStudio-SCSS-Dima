@@ -20,7 +20,7 @@
         letter-spacing: 1.08px;
     }
 
-    &__big{
+    &__item{
         width: 1220px;
     
         display: flex;
@@ -40,7 +40,7 @@
         border: 1px solid $team_icon_color;
     }
 
-    &:hover &__svg-hover{
+    &:hover &__svg--hover{
         fill: $accent_color; 
     }
 
