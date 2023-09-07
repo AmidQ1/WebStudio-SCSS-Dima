@@ -103,12 +103,12 @@
     &__team{
         transition: fill 1s;
 
-        &:hover .circle__team--button{
+        &:hover .circle__team-button{
             transition: fill 1s;
             fill: $accent_color;
         }
 
-        &:hover &--button{
+        &:hover &-button{
             transition: fill 1s;
             fill: $white_color;
         }

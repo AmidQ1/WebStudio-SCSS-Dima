@@ -12,12 +12,12 @@
 
     flex-direction: row;
 
-        &__info{
+        &-info{
             margin-left: 215px;
             margin-top: 60px;
         }
 
-        &__city{
+        &-city{
             color: $white_color;
             font-size: 14px;
             font-style: normal;
@@ -26,7 +26,7 @@
             letter-spacing: 0.42px;
         }
 
-        &__email{
+        &-email{
             color: $footer_color;
             font-size: 14px;
             font-style: normal;
@@ -35,7 +35,7 @@
             letter-spacing: 0.42px;
         }
 
-        &__tel{
+        &-tel{
             color: $footer_color;
             font-size: 14px;
             font-style: normal;
@@ -59,41 +59,56 @@
                 text-transform: uppercase;
             }
 
-            &__text{
-                width: 358px;
-                height: 50px;
+            &-telegram{
+                margin-top: 60px;
+                margin-left: 109px;
 
-                border-radius: 4px;
-                border: 1px solid rgba(255, 255, 255, 0.30);
-                background: rgba(33, 150, 243, 0.00);
-                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+                &__name{
+                    color: $white_color;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.42px;
+                    text-transform: uppercase;
+                }
+    
+                &__text{
+                    width: 358px;
+                    height: 50px;
+    
+                    border-radius: 4px;
+                    border: 1px solid rgba(255, 255, 255, 0.30);
+                    background: rgba(33, 150, 243, 0.00);
+                    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    
+                    margin-right: 12px;
+    
+                    padding-left: 16px;
+    
+                    color: $footer_color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0.48px;
 
-                margin-right: 12px;
-
-                padding-left: 16px;
-
-                color: $footer_color;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
-                letter-spacing: 0.48px;
-            }
-
-            &__text:focus{
-                color: $accent_color;
-            }
-
-            &__text::placeholder{
-                width: 47px;
-                height: 20px;
-
-                color: $footer_color;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 20px;
-                letter-spacing: 0.48px;
+                    &:focus{
+                        color: $accent_color;
+                    }
+        
+                    &::placeholder{
+                        width: 47px;
+                        height: 20px;
+        
+                        color: $footer_color;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0.48px;
+                    }
+                }
             }
 
             &__button-after{
@@ -111,11 +126,6 @@
                 font-weight: 700;
                 line-height: 30px;
                 letter-spacing: 0.96px;
-            }
-
-            &__telegram{
-                margin-top: 60px;
-                margin-left: 109px;
             }
 
             &__button-after::after{

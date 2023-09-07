@@ -51,6 +51,7 @@ footer .log-web {
   flex-direction: column;
 }
 .header__text {
+  height: 48px;
   position: relative;
   color: #212121;
   font-size: 14px;
@@ -62,18 +63,6 @@ footer .log-web {
 }
 .header__text:hover {
   color: #2196F3;
-}
-.header__text-one {
-  width: 48px;
-  height: 48px;
-}
-.header__text-two {
-  width: 72px;
-  height: 48px;
-}
-.header__text-three {
-  width: 64px;
-  height: 48px;
 }
 .header__text::after {
   content: "";
@@ -91,35 +80,35 @@ footer .log-web {
   opacity: 1;
   width: 100%;
 }
-.header-item {
+.header-actions {
   display: flex;
 }
-.header-item__email, .header-item__tel {
+.header-actions__email, .header-actions__tel {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   margin-right: 30px;
 }
-.header-item__email {
+.header-actions__email {
   width: 161px;
 }
-.header-item__email:hover .hvs {
+.header-actions__email:hover .hvs {
   fill: #2196F3;
 }
-.header-item__email:hover .header-item__email--hover {
+.header-actions__email:hover .header-actions__email--hover {
   color: #2196F3;
 }
-.header-item__tel {
+.header-actions__tel {
   width: 142px;
 }
-.header-item__tel:hover .hvs {
+.header-actions__tel:hover .hvs {
   fill: #2196F3;
 }
-.header-item__tel:hover .header-item__tel--hover {
+.header-actions__tel:hover .header-actions__tel--hover {
   color: #2196F3;
 }
-.header-item__email--hover {
+.header-actions__email--hover {
   width: 135px;
   height: 16px;
   color: #757575;
@@ -132,7 +121,7 @@ footer .log-web {
   margin: 0;
   transition: color 1s;
 }
-.header-item__tel--hover {
+.header-actions__tel--hover {
   width: 122px;
   height: 16px;
   color: #757575;
@@ -262,7 +251,7 @@ footer .log-web {
   margin-bottom: 10px;
   position: relative;
 }
-.form__box:hover .form__text, .form__box:hover .form__svg--hover {
+.form__box:hover .form__text, .form__box:hover .form__svg__active {
   color: #2196F3;
   fill: #2196F3;
 }
@@ -298,12 +287,12 @@ footer .log-web {
   justify-content: center;
   align-items: center;
 }
-.form__check--checkbox {
+.form__check-checkbox {
   width: 16px;
   height: 15px;
   margin-right: 8px;
 }
-.form__check--conditions {
+.form__check-conditions {
   color: #757575;
   font-size: 14px;
   font-style: normal;
@@ -312,7 +301,7 @@ footer .log-web {
   letter-spacing: 0.42px;
   margin-right: 8px;
 }
-.form__check--a {
+.form__check-a {
   color: #2196F3;
   font-size: 14px;
   font-style: normal;
@@ -358,7 +347,7 @@ footer .log-web {
   justify-content: center;
   align-items: center;
 }
-.form-send--button {
+.form-send-button {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -503,11 +492,11 @@ footer .log-web {
 .social__team {
   transition: fill 1s;
 }
-.social__team:hover .circle__team--button {
+.social__team:hover .circle__team-button {
   transition: fill 1s;
   fill: #2196F3;
 }
-.social__team:hover .social__team--button {
+.social__team:hover .social__team-button {
   transition: fill 1s;
   fill: #FFFFFF;
 }
@@ -559,11 +548,11 @@ footer .log-web {
   display: flex;
   flex-direction: row;
 }
-.footer__info {
+.footer-info {
   margin-left: 215px;
   margin-top: 60px;
 }
-.footer__city {
+.footer-city {
   color: #FFFFFF;
   font-size: 14px;
   font-style: normal;
@@ -571,7 +560,7 @@ footer .log-web {
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-.footer__email {
+.footer-email {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
@@ -579,7 +568,7 @@ footer .log-web {
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-.footer__tel {
+.footer-tel {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-style: normal;
@@ -600,7 +589,20 @@ footer .log-web {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.footer__text {
+.footer-telegram {
+  margin-top: 60px;
+  margin-left: 109px;
+}
+.footer-telegram__name {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.footer-telegram__text {
   width: 358px;
   height: 50px;
   border-radius: 4px;
@@ -616,10 +618,10 @@ footer .log-web {
   line-height: 20px;
   letter-spacing: 0.48px;
 }
-.footer__text:focus {
+.footer-telegram__text:focus {
   color: #2196F3;
 }
-.footer__text::-moz-placeholder {
+.footer-telegram__text::-moz-placeholder {
   width: 47px;
   height: 20px;
   color: rgba(255, 255, 255, 0.6);
@@ -629,7 +631,7 @@ footer .log-web {
   line-height: 20px;
   letter-spacing: 0.48px;
 }
-.footer__text::placeholder {
+.footer-telegram__text::placeholder {
   width: 47px;
   height: 20px;
   color: rgba(255, 255, 255, 0.6);
@@ -652,10 +654,6 @@ footer .log-web {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
-}
-.footer__telegram {
-  margin-top: 60px;
-  margin-left: 109px;
 }
 .footer__button-after::after {
   display: inline-block;
