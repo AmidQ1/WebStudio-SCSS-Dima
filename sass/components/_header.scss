@@ -123,36 +123,14 @@
 
     &__email--hover{
         width: 135px;
-        height: 16px;
-    
-        color: $gray_color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-    
-        margin: 0;
-    
-        transition:color 1s;
+        
+        @extend %tel-email;
     }
     
     &__tel--hover{
         width: 122px;
-        height: 16px;
-    
-        color: $gray_color;
-        font-family: "Roboto", sans-serif;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.28px;
-    
-        margin: 0; 
-    
-        transition:color 1s;
+
+        @extend %tel-email;
     }
     }
 }

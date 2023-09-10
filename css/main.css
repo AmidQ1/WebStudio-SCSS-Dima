@@ -1,4 +1,60 @@
 /*SASS utils*/
+.header-actions__tel--hover, .header-actions__email--hover {
+  height: 16px;
+  color: #757575;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  margin: 0;
+  transition: color 1s;
+}
+
+.form__check-a, .form__check-conditions {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
+.footer-telegram__text::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
+
+.footer-telegram__text::placeholder, .footer-telegram__text {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.48px;
+}
+
+.footer-telegram__name, .footer__name, .doing__status {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer-tel, .footer-email, .footer-city {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+}
+
 /*main comp*/
 body {
   font-family: "Roboto", sans-serif;
@@ -110,29 +166,9 @@ footer .log-web {
 }
 .header-actions__email--hover {
   width: 135px;
-  height: 16px;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  margin: 0;
-  transition: color 1s;
 }
 .header-actions__tel--hover {
   width: 122px;
-  height: 16px;
-  color: #757575;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-  margin: 0;
-  transition: color 1s;
 }
 
 .hvs {
@@ -141,9 +177,9 @@ footer .log-web {
 
 /*Banner*/
 .banner {
+  background-image: url(../img/banner.png);
   width: 100vw;
   height: 600px;
-  background-image: url(../img/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -167,15 +203,15 @@ footer .log-web {
   align-items: center;
 }
 .banner__button--open {
+  width: 216px;
+  height: 50px;
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 30px; /* 187.5% */
+  line-height: 30px;
   letter-spacing: 0.96px;
-  width: 216px;
-  height: 50px;
   border-radius: 4px;
   background: #2196F3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -294,20 +330,10 @@ footer .log-web {
 }
 .form__check-conditions {
   color: #757575;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
   margin-right: 8px;
 }
 .form__check-a {
   color: #2196F3;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
   text-decoration-line: underline;
 }
 
@@ -350,9 +376,6 @@ footer .log-web {
 .form-send-button {
   width: 200px;
   height: 50px;
-  border-radius: 4px;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -360,6 +383,9 @@ footer .log-web {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*are we doing*/
@@ -401,15 +427,7 @@ footer .log-web {
   align-items: center;
 }
 .doing__status {
-  color: #FFFFFF;
   text-align: center;
-  font-family: "Roboto", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 
 /*TEAM*/
@@ -454,7 +472,6 @@ footer .log-web {
 .team__name {
   color: #212121;
   text-align: center;
-  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -554,53 +571,20 @@ footer .log-web {
 }
 .footer-city {
   color: #FFFFFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 .footer-email {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.42px;
 }
 .footer__joing {
   margin-top: 60px;
   margin-left: 70px;
 }
-.footer__name {
-  color: #FFFFFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
-}
 .footer-telegram {
   margin-top: 60px;
   margin-left: 109px;
-}
-.footer-telegram__name {
-  color: #FFFFFF;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
 }
 .footer-telegram__text {
   width: 358px;
@@ -611,12 +595,6 @@ footer .log-web {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   margin-right: 12px;
   padding-left: 16px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
 }
 .footer-telegram__text:focus {
   color: #2196F3;
@@ -624,29 +602,14 @@ footer .log-web {
 .footer-telegram__text::-moz-placeholder {
   width: 47px;
   height: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
 }
 .footer-telegram__text::placeholder {
   width: 47px;
   height: 20px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0.48px;
 }
 .footer__button-after {
   width: 200px;
   height: 50px;
-  border-radius: 4px;
-  background: #2196F3;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #FFFFFF;
   text-align: center;
   font-size: 16px;
@@ -654,6 +617,9 @@ footer .log-web {
   font-weight: 700;
   line-height: 30px;
   letter-spacing: 0.96px;
+  border-radius: 4px;
+  background: #2196F3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .footer__button-after::after {
   display: inline-block;

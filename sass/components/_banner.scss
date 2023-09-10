@@ -1,9 +1,9 @@
 /*Banner*/
 .banner{
+    background-image: url(../img/banner.png);
+
     width: 100vw;
     height: 600px;
-
-    background-image: url(../img/banner.png);
 
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,22 +37,10 @@
         }
         
         &__button--open{
-            color: $white_color;
-            text-align: center;
-        
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-        
-            line-height: 30px; /* 187.5% */
-            letter-spacing: 0.96px;
-        
             width: 216px;
             height: 50px;
-        
-            border-radius: 4px;
-            background: $accent_color;
-            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+
+            @include bth;
         }
 }
 
