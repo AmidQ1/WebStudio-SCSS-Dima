@@ -20,24 +20,3 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-
-
-// 768px
-
-@media screen and (max-width: 768px) {
-    .container{
-        width: 100%;
-    }
-}
-
-
-// 1400px
-
-
-@media screen and (max-width: 1400px){
-
-    .container{
-        width: 100%;
-        margin: 0 auto;
-    }
-}
