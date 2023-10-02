@@ -13,3 +13,45 @@
     background: $accent_color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
+@mixin type-info{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px; 
+}
+
+@mixin type-white-main{
+    color: $white_color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase; 
+}
+
+@mixin type-footer{
+    color: $footer_color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+@mixin tel-email {
+    height: 16px;
+    
+    color: $gray_color;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.28px;
+
+    margin: 0;
+
+    transition:color 1s;
+}

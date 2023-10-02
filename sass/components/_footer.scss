@@ -10,36 +10,38 @@
     flex-direction: row;
 
         &-info{
-            margin-left: 215px;
             margin-top: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
         &-city{
             color: $white_color;
-            @extend %type-info;
+            @include type-info;
         }
 
         &-email{
             color: $footer_color;
-            @extend %type-info;
+            @include type-info;
         }
 
         &-tel{
             color: $footer_color;
-            @extend %type-info;
+            @include type-info;
         }
 
 
             &__name{
-                @extend %type-white-main;
+                @include type-white-main;
             }
 
             &-telegram{
                 margin-top: 60px;
-                margin-left: 109px;
 
                 &__name{
-                    @extend %type-white-main;
+                    @include type-white-main;
                 }
     
                 &__text{
@@ -55,7 +57,7 @@
     
                     padding-left: 16px;
     
-                    @extend %type-footer;
+                    @include type-footer;
 
                     &:focus{
                         color: $accent_color;
@@ -65,7 +67,7 @@
                         width: 47px;
                         height: 20px;
         
-                        @extend %type-footer;
+                        @include type-footer;
                     }
                 }
             }
@@ -125,17 +127,17 @@
     
             &-city{
                 color: $white_color;
-                @extend %type-info;
+                @include type-info;
             }
     
             &-email{
                 color: $footer_color;
-                @extend %type-info;
+                @include type-info;
             }
     
             &-tel{
                 color: $footer_color;
-                @extend %type-info;
+                @include type-info;
             }
     
                 &__joing{
@@ -149,7 +151,7 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    @extend %type-white-main;
+                    @include type-white-main;
                 }
     
                 &-telegram{
@@ -160,7 +162,7 @@
                     margin-top: 60px;
     
                     &__name{
-                        @extend %type-white-main;
+                        @include type-white-main;
                     }
 
                     &-box{
@@ -181,11 +183,9 @@
         
                         margin-right: 12px;
 
-                        margin-bottom: 500px;
+                        margin-bottom: 60px;
         
-                        padding-left: 16px;
-        
-                        @extend %type-footer;
+                        @include type-footer;
     
                         &:focus{
                             color: $accent_color;
@@ -195,7 +195,7 @@
                             width: 47px;
                             height: 20px;
             
-                            @extend %type-footer;
+                            @include type-footer;
                         }
                     }
                 }
@@ -249,17 +249,17 @@
     
             &-city{
                 color: $white_color;
-                @extend %type-info;
+                @include type-info;
             }
     
             &-email{
                 color: $footer_color;
-                @extend %type-info;
+                @include type-info;
             }
     
             &-tel{
                 color: $footer_color;
-                @extend %type-info;
+                @include type-info;
             }
     
                 &__joing{
@@ -268,15 +268,14 @@
                 }
     
                 &__name{
-                    @extend %type-white-main;
+                    @include type-white-main;
                 }
     
                 &-telegram{
                     margin-top: 60px;
-                    margin-left: 109px;
     
                     &__name{
-                        @extend %type-white-main;
+                        @include type-white-main;
                     }
         
                     &__text{
@@ -292,7 +291,7 @@
         
                         padding-left: 16px;
         
-                        @extend %type-footer;
+                        @include type-footer;
     
                         &:focus{
                             color: $accent_color;
@@ -302,7 +301,7 @@
                             width: 47px;
                             height: 20px;
             
-                            @extend %type-footer;
+                            @include type-footer;
                         }
                     }
                 }
