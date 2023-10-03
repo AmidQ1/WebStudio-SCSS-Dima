@@ -171,8 +171,67 @@ footer .log-web {
   .container {
     width: 100%;
   }
+  .menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #FFFFFF;
+  }
+  .menu__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+  }
+  .menu__item-box {
+    padding-top: 48px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  .menu__item-tel-email {
+    margin-top: 10%;
+  }
+  .menu__item-email, .menu__item-tel {
+    margin-bottom: 12px;
+  }
+  .menu__item-email--hover, .menu__item-tel--hover {
+    color: #757575;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    transition: 0.5s;
+  }
+  .menu__item-email--hover:hover, .menu__item-tel--hover:hover {
+    color: #2196F3;
+    transition: 0.5s;
+  }
+  .menu__item-object {
+    padding: 0;
+    margin-bottom: 36px;
+    list-style: none;
+  }
+  .menu__item-text {
+    position: relative;
+    color: #212121;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    transition: 0.5s;
+  }
+  .menu__item-text:hover {
+    color: #2196F3;
+  }
 }
-@media (min-width: 1400px) {
+@media (max-width: 768px) and (min-width: 1400px) {
   .container {
     width: 100%;
     margin: 0 auto;
