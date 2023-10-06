@@ -55,7 +55,7 @@ footer .log-web {
   /*nav*/
   /*tel, email*/
 }
-.header-site {
+.header-site-decstop {
   width: 1170px;
   display: flex;
   justify-content: center;
@@ -163,6 +163,10 @@ footer .log-web {
   transition: color 1s;
 }
 
+.header-site-mobile {
+  display: none;
+}
+
 .hvs {
   transition: fill 1s;
 }
@@ -170,6 +174,46 @@ footer .log-web {
 @media (max-width: 768px) {
   .container {
     width: 100%;
+  }
+  .header-site-mobile {
+    display: block;
+  }
+  .header-site-decstop {
+    display: none;
+  }
+  .check-modal-header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .checkbox {
+    display: none;
+    width: 40px;
+    height: 65px;
+  }
+  .checkbox-label {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    height: 4px;
+    background-color: black;
+  }
+  .checkbox-label::before {
+    content: "";
+    width: 24px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 10px;
+  }
+  .checkbox-label::after {
+    content: "";
+    width: 24px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 10px;
   }
   .menu {
     width: 100%;
@@ -180,12 +224,33 @@ footer .log-web {
     right: 0;
     left: 0;
     background-color: #FFFFFF;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease-in;
   }
   .menu__item {
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-left: 40px;
+  }
+  .menu__item-button {
+    margin-top: 10px;
+    margin-right: 15px;
+    position: absolute;
+    right: 0;
+  }
+  .menu__item-button--close {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    border: none;
+    background: none;
+    transition: 0.5s;
+  }
+  .menu__item-button--close:hover {
+    color: #2196F3;
+    transition: 0.5s;
   }
   .menu__item-box {
     padding-top: 48px;
@@ -197,6 +262,7 @@ footer .log-web {
     margin-top: 10%;
   }
   .menu__item-email, .menu__item-tel {
+    height: 32px;
     margin-bottom: 12px;
   }
   .menu__item-email--hover, .menu__item-tel--hover {
@@ -245,7 +311,7 @@ footer .log-web {
     /*nav*/
     /*tel, email*/
   }
-  .header-site {
+  .header-site-decstop {
     width: 1170px;
     display: flex;
     justify-content: center;
