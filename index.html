@@ -14,17 +14,18 @@
                         <img class="log-web" src="./img/WebStudio.png" alt="logo">
 
                         
-                        <input type="checkbox" id="check" class="checkbox" menu-modal-open>
-                                    <label for="check" class="checkbox-label">
+                        <input type="checkbox" id="check" class="checkbox">
+                                    <label for="check" class="checkbox-label js-open-menu" aria-expanded="false"
+                                    aria-controls="mobile-menu">
                                         <span></span>
                                     </label>
                     </div>
-                    <div class="menu" menu-modal>
+                    <div class="menu js-menu-container" id="mobile-menu">
                         <section class="menu__item">
                             <article class="menu__item-button">
-                                <button class="menu__item-button--close" menu-modal-close>×</button>
+                                <button class="menu__item-button--close menu-toggle js-close-menu">×</button>
                             </article>
-                            <article class="menu__item-box">
+                            <article class="menu__item-box mobile-menu" >
                                 <ul class="menu__item-object">
                                     <li class="menu__item-text">Студія</li>
                                 </ul>
@@ -36,7 +37,7 @@
                                 </ul>
                             </article>
 
-                            <article class="menu__item-box menu__item-tel-email">
+                            <article class="menu__item-box menu__item-tel-email mobile-menu">
                                 <div class="menu__item-email">
                                     <p class="menu__item-email--hover">info@devstudio.com</p>
                                 </div>
@@ -468,5 +469,6 @@
             </footer> 
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>

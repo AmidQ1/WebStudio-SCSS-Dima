@@ -185,7 +185,7 @@
         &-label{
             display: inline-block;
             position: relative;
-            width: 24px;
+            width: 42.5px;
             height: 4px;
 
             background-color: black;
@@ -214,6 +214,7 @@
         }
     }
     
+    
     .menu{
         width: 100%;
 
@@ -228,7 +229,12 @@
         background-color: $white_color;
         opacity: 1;
         visibility: visible;
-        transition: opacity 250ms ease-in;
+        transition: opacity 250ms ease-in, transform 250ms ease-in-out;
+        transform: translateX(100%);
+
+        &.is-open{
+            transform: translateX(0);
+        }
 
         &__item{
             width: 90%;

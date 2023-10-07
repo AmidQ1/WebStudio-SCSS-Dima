@@ -194,7 +194,7 @@ footer .log-web {
   .checkbox-label {
     display: inline-block;
     position: relative;
-    width: 24px;
+    width: 42.5px;
     height: 4px;
     background-color: black;
   }
@@ -224,7 +224,11 @@ footer .log-web {
     background-color: #FFFFFF;
     opacity: 1;
     visibility: visible;
-    transition: opacity 250ms ease-in;
+    transition: opacity 250ms ease-in, transform 250ms ease-in-out;
+    transform: translateX(100%);
+  }
+  .menu.is-open {
+    transform: translateX(0);
   }
   .menu__item {
     width: 90%;
