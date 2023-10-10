@@ -214,6 +214,23 @@ footer .log-web {
     position: absolute;
     bottom: 10px;
   }
+  .menu .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+  }
+  .mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
   .menu {
     width: 100%;
     position: fixed;
