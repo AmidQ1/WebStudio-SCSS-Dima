@@ -54,8 +54,6 @@
         width: 100%;
         height: 400px;
     
-        background-size: cover;
-        background-repeat: no-repeat;
     
         display: flex;
     
@@ -68,21 +66,9 @@
             &__title{
                 width: 360px;
             
-                color: $white_color;
-                text-align: center;
-            
                 font-size: 26px;
-                font-style: normal;
                 font-weight: 900;
-            
-                line-height: 42px;  
-                letter-spacing: 1.56px;
-                text-transform: uppercase;
-            
-                display: flex;
-            
-                justify-content: center;
-                align-items: center;
+                line-height: 42px;
             }
             
             &__button--open{
@@ -106,9 +92,7 @@
     .banner{
         width: 100%;
         height: 600px;
-    
-        background-size: cover;
-        background-repeat: no-repeat;
+
     
         display: flex;
     
