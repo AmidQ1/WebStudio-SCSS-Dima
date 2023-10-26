@@ -20,36 +20,19 @@
                                         <span></span>
                                     </label>
                     </div>
-                    <div class="menu js-menu-container" id="mobile-menu">
-                        <section class="menu__item">
-                            <article class="menu__item-button">
-                                <button class="menu__item-button--close menu-toggle js-close-menu">×</button>
-                            </article>
-                            <article class="menu__item-box mobile-menu" >
-                                <ul class="menu__item-object">
-                                    <li class="menu__item-text">Студія</li>
-                                </ul>
-                                <ul class="menu__item-object">
-                                    <li class="menu__item-text">Портфоліо</li>
-                                </ul>
-                                <ul class="menu__item-object">
-                                    <li class="menu__item-text">Контакти</li>
-                                </ul>
-                            </article>
-
-                            <article class="menu__item-box menu__item-tel-email mobile-menu">
-                                <div class="menu__item-email">
-                                    <p class="menu__item-email--hover">info@devstudio.com</p>
-                                </div>
-                            
-                                <div class="menu__item-tel">
-                                    <p class="menu__item-tel--hover">+38 096 111 11 11</p>
-                                </div>
-                            </article>
-
-                        </section>
-
-                    </div>
+                    <div class="menu-container js-menu-container" id="mobile-menu">
+                        <button class="menu__item-button--close menu-toggle js-close-menu">×</button>
+                                        <ul class="mobile-menu">
+                                          <li><a href="" class="link">Студія</a></li>
+                                          <li><a href="" class="link">Портфоліо</a></li>
+                                          <li><a href="" class="link">Contacts</a></li>
+                                          <li><a href="" class="link">Контакти</a></li>
+                                        </ul>
+                                        <ul class="mobile-menu">
+                                          <li><a href="" class="link1">+38 096 111 11 11</a></li>
+                                          <li><a href="" class="link1">info@devstudio.com</a></li>
+                                        </ul>
+                                      </div>
                     
                 </div>
                 <div class="header-site-decstop">
@@ -94,7 +77,7 @@
                     <button class="banner__button--open" data-modal-open>Замовити послугу</button>
                 </div>
 
-                        <div class="form" data-modal>
+                        <!-- <div class="form" data-modal>
                             <div class="form__object">
                                 <div class="form__button">
                                     <button class="form__button--close" data-modal-close>×</button>
@@ -162,7 +145,7 @@
                                     <button class="form-send-button">Відправити</button>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
 
                     <div class="doing">
                         <h2 class="doing__title">Чим ми займаємося</h2>
@@ -513,6 +496,13 @@
             </footer> 
         </div>
         <script src="./js/modal.js"></script>
-        <script src="./js/menu.js"></script>
+
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+                                      <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
