@@ -1318,11 +1318,11 @@ body {
   padding: 32px;
   background-color: #fff;
   z-index: 999;
-  transform: translateX(100%);
+  transform: translateX(100vw);
   transition: transform 250ms ease-in-out;
 }
 
-.menu-container.is-open {
+.menu-container.mobile-menu {
   transform: translateX(0);
 }
 
