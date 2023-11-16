@@ -1,0 +1,144 @@
+/*are we doing*/
+.doing{
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+        &__title{
+            color: $main_title_color;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.08px;
+
+            margin-bottom: 50px;
+        }   
+
+        &__item{
+            width: 1170px;
+
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        } 
+        
+        &__photo{
+            width: 100%;
+            max-width: 370px;
+            height: 294px;
+        }
+
+        &__text{
+            width: 370px;
+            height: 70px;
+
+            background: rgba(47, 48, 58, 0.80);
+            flex-shrink: 0;
+
+            position: absolute;
+
+            bottom: 5px;   
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__status{
+            text-align: center;
+            @extend %type-white-main;    
+        }
+}
+
+// 768px
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+    }
+
+    .doing{
+        display: none;
+}
+}
+
+
+// 1400px
+
+
+@media (min-width: 1400px){
+
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .doing{
+        position: relative;
+    
+        display: flex;
+    
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    
+            &__title{
+                color: $main_title_color;
+                text-align: center;
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 1.08px;
+    
+                margin-bottom: 50px;
+            }   
+    
+            &__item{
+                width: 1170px;
+    
+                display: flex;
+    
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+            } 
+            
+            &__photo{
+                width: 100%;
+                max-width: 370px;
+                height: 294px;
+            }
+    
+            &__text{
+                width: 370px;
+                height: 70px;
+    
+                background: rgba(47, 48, 58, 0.80);
+                flex-shrink: 0;
+    
+                position: absolute;
+    
+                bottom: 5px;   
+    
+                display: flex;
+    
+                justify-content: center;
+                align-items: center;
+            }
+    
+            &__status{
+                text-align: center;
+                @extend %type-white-main;    
+            }
+    }
+}

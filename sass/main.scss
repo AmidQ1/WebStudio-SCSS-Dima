@@ -1,14 +1,24 @@
+/*SASS utils*/
+
+@import "utils/variables";
+@import "utils/placeholders";
+@import "utils/mixins";
+
 /*main comp*/
 
-body{
-    font-family: "Roboto", sans-serif;
-
-    display: flex;
-
-    justify-content: center;
-    align-items: center;
-
-    flex-direction: column;
-}
+@import "components/base";
 
 /*SASS comp*/
+
+@import "components/logo";
+
+@import "components/header";
+
+@import "components/banner";
+@import "components/form";
+@import "components/doing";
+@import "components/team";
+@import "components/client";
+@import "components/menu-model";
+
+@import "components/footer";
