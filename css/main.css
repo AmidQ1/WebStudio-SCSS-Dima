@@ -460,7 +460,7 @@ footer .log-web {
 }
 @media screen and (min-width: 1400px) and (min-device-pixel-ratio: 2), screen and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1400px) and (min-resolution: 192dpi), screen and (min-width: 1400px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(../img/banner_dek@2x.jpg);
+    background-image: url(../img/banner_dek@2x.png);
   }
 }
 .banner__title {
@@ -514,7 +514,7 @@ footer .log-web {
 }
 @media screen and (max-width: 768px) and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (max-width: 768px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(../img/banner_mob@2x.jpg);
+    background-image: url(../img/banner_mob@2x.png);
   }
 }
 @media (max-width: 768px) {
@@ -551,7 +551,7 @@ footer .log-web {
 }
 @media screen and (min-width: 1400px) and (min-width: 1400px) and (min-device-pixel-ratio: 2), screen and (min-width: 1400px) and (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1400px) and (min-width: 1400px) and (min-resolution: 192dpi), screen and (min-width: 1400px) and (min-width: 1400px) and (min-resolution: 2dppx) {
   .banner {
-    background-image: url(../img/banner_dek@2x.jpg);
+    background-image: url(../img/banner_dek@2x.png);
   }
 }
 @media (min-width: 1400px) {
